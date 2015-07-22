@@ -40,8 +40,8 @@ class TestBasic(unittest.TestCase):
         pass
 
     def test_choice1(self):
-        import gen_choice_ber
-        choice1 = gen_choice_ber.Choice1()
+        import tests.gen_choice_ber
+        choice1 = tests.gen_choice_ber.Choice1()
 
 
 if __name__ == '__main__':
