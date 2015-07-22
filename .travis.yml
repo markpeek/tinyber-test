@@ -7,6 +7,7 @@ python:
 
 install:
   - pip install --use-mirrors pep8 pyflakes
+  - pip install -r requirements.txt
 
 before_script:
   - if [[ $TRAVIS_PYTHON_VERSION == 3* ]]; then 2to3 -n -w --no-diffs tinyber; fi
