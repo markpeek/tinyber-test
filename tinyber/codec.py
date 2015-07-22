@@ -241,7 +241,7 @@ class Encoder:
                 r.insert(0, self._chr(n & 0xff))
                 n >>= 8
             r.insert(0, self._chr(0x80 | len(r)))
-            self.emit(''.join(r))
+            self.emit(b''.join(r))
 
     def emit_tag(self, tag, flags=0):
         if tag < 0x1f:
