@@ -31,7 +31,7 @@ def generate(infilename, outfilename):
     backend = Backend(args, walker, module_name, path)
     backend.generate_code()
 
-def reload():
+def test_reload():
     import sys
     sys.path[:0] = '.'
 

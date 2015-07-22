@@ -7,7 +7,7 @@ from tinyber.walker import Walker
 from tinyber.py_nodes import PythonBackend as Backend
 from tinyber import py_nodes as nodes
 
-from tests.utils import generate, reload
+from tests.utils import generate, test_reload
 
 
 class TestBasic(unittest.TestCase):
@@ -20,7 +20,7 @@ class TestBasic(unittest.TestCase):
         pass
 
     def test_choice1(self):
-        reload()
+        test_reload()
         import tests.gen_choice_ber
         choice1 = tests.gen_choice_ber.Choice1()
 
